@@ -23,7 +23,7 @@
 
     <div class="right-side-div">
         <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-            Sign up <i>now</i> to get started.
+            <br>Sign up <i>now</i> to get started.
         </p>
         <p class="text">You <i>know</i> you want to.</p>
         <div class="form-up-div">
@@ -33,38 +33,40 @@
             <div class="input-div">
                 <form action="example.com/path" method="post">
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" name="firsName" required>
+                    <input type="text" id="firstName" name="firstName" required>
                     <div class="error" id="firstNameError"></div>
                 </form>
                 <form action="example.com/path" method="post">
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName">
+                    <input type="text" id="lastName" name="lastName" required>
                     <div class="error" id="lastNameError"></div>
                 </form>
                   <form action="example.com/path" method="post">
                     <label for="firstName">EMAIL</label>
-                    <input type="email" id="email" placeholder="exampl@email.com">
+                    <input type="email" id="email" placeholder="example@email.com" name="email" required>
                     <div class="error" id="emailError"></div>
                 </form>
                 <form action="example.com/path" method="post">
                     <label for="firstName">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber">
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
                     <div class="error" id="phoneNumberError"></div>
                 </form>
                 <form action="example.com/path" method="post">
                     <label for="firstName">PASSWORD</label>
-                    <input type="new-password" id="password">
+                    <input type="password" id="password" name="password" required  
+                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
                     <div class="error" id="passwordError"></div>
                 </form>
                 <form action="example.com/path" method="post">
                     <label for="firstName">CONFIRM PASSWORD</label>
-                    <input type="new-password" id="passwordValidation">
+                    <input type="password" id="passwordValidation" name="passwordValidation" required
+                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
                     <div class="error" id="passwordValidationError"></div>
                 </form>
             </div>
         </div>
         <button>Create Account</button>
-        <div class="bottom-text">Already have an account? <a class="Log-in" href="#">Log in</a></div>
+        <div class="bottom-text">Already have an account? <a class="log-in" href="#">Log in</a></div>
     </div>
     
 </body>

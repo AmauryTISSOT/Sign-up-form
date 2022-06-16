@@ -1,10 +1,10 @@
 const firstName = ['firstName', document.querySelector('#firstName'), 'Please type in your first name'];
 const lastName = ['lastName',document.querySelector('#lastName'), 'Please type in your last name'];
-const email = ['email', document.querySelector('#email'), 'Please enter in a valid Email. ex(johnDoe@email.com)'];
+const email = ['email', document.querySelector('#email'), 'Please enter in a valid Email'];
 const phoneNumber = ['phoneNumber', document.querySelector('#phoneNumber'), 'Please enter a valid phone number'];
 const password = ['password', document.querySelector('#password'), ''];
 const passwordValidation = ['passwordValidation', document.querySelector('#passwordValidation'), ''];
-
+const formListListener = [firstName, lastName, email, phoneNumber]
 
 // function to get error div.
 
@@ -25,4 +25,56 @@ const inputListener = (selectorConst) => selectorConst[1].addEventListener("inpu
     }
 });
 
-inputListener(firstName)
+const loopListener = () => formListListener.forEach(element => {
+    inputListener(element);
+});
+
+password[1].addEventListener("input", function (event) {
+    if (password[1].validity.patternMismatch){
+      const currentValue = password[1].value;
+      const regExpCap = /[A-Z]/g;
+      const regExpDig = /[0-9]/g;
+      let result = '';
+        if (regExpCap.test(currentValue)){
+            result += '';
+        } else {
+            result += `Missing at least 1 capital letter. `;
+            result += '\n';
+        }
+        
+        
+        if (regExpDig.test(currentValue)){
+            result += '';
+        } else {
+            result += 'Missing at least 1 number. ';
+            result += '\n';
+        }
+        
+        if (currentValue.length < 9){
+            result += 'Password must be at least 8 characters. '
+            result += '\n';
+        } else {
+            result += '';
+        }
+      errorSelector(password).textContent = result;
+
+    } else {
+      errorSelector(password).textContent = '';
+    }
+  });
+
+  passwordValidation[1].addEventListener("input", (event) => {
+    if (passwordValidation[1].value === password[1].value) {
+        errorSelector(passwordValidation).textContent = '';
+    }
+    else {
+        errorSelector(passwordValidation).textContent = 'Passwords do not match';
+    }
+  })
+
+
+
+
+
+
+loopListener();
