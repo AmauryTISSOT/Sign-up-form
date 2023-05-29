@@ -1,73 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up-form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="left-side-div">
-        <div class="card-body">
-            <img class="logo" src="/pictures/odin-lined.png" alt="odin-logo">
-            <div class="odin">ODIN</div>
-        </div>
-        <div class="image-source">Photo by 
-            <a class="source-link" href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Halie West</a>
-             on <a class="source-link" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">
-                Unsplash</a>
-            </div>
+      <div class="card-body">
+        <img class="logo" src="/pictures/odin-lined.png" alt="odin-logo" />
+        <div class="odin">ODIN</div>
+      </div>
+      <div class="image-source">
+        Photo by
+        <a
+          class="source-link"
+          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          target="_blank"
+          >Halie West</a
+        >
+        on
+        <a
+          class="source-link"
+          href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          target="_blank"
+        >
+          Unsplash</a
+        >
+      </div>
     </div>
 
     <div class="right-side-div">
-        <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-            <br>Sign up <i>now</i> to get started.
-        </p>
-        <p class="text">You <i>know</i> you want to.</p>
-        <div class="form-up-div">
-            <div>
-                <p class="text">Let's do this !</p>
-            </div>
-            <div class="input-div">
-                <form action="example.com/path" method="post">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                    <div class="error" id="firstNameError"></div>
-                </form>
-                <form action="example.com/path" method="post">
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                    <div class="error" id="lastNameError"></div>
-                </form>
-                  <form action="example.com/path" method="post">
-                    <label for="firstName">EMAIL</label>
-                    <input type="email" id="email" placeholder="example@email.com" name="email" required>
-                    <div class="error" id="emailError"></div>
-                </form>
-                <form action="example.com/path" method="post">
-                    <label for="firstName">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
-                    <div class="error" id="phoneNumberError"></div>
-                </form>
-                <form action="example.com/path" method="post">
-                    <label for="firstName">PASSWORD</label>
-                    <input type="password" id="password" name="password" required  
-                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
-                    <div class="error" id="passwordError"></div>
-                </form>
-                <form action="example.com/path" method="post">
-                    <label for="firstName">CONFIRM PASSWORD</label>
-                    <input type="password" id="passwordValidation" name="passwordValidation" required
-                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
-                    <div class="error" id="passwordValidationError"></div>
-                </form>
-            </div>
-        </div>
-        <button>Create Account</button>
-        <div class="bottom-text">Already have an account? <a class="log-in" href="#">Log in</a></div>
+      <p class="text">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. <br />Sign up
+        <i>now</i> to get started.
+      </p>
+      <p class="text">You <i>know</i> you want to.</p>
+
+          <div class="form-up-div">
+              <div>
+                  <p class="text">Let's do this !</p>
+                </div>
+                <div class="input-div">
+                    <form action="example.com/path" method="post">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName" required />
+                        <div class="error" id="firstNameError"></div>
+                    </form>
+                    <form action="example.com/path" method="post">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName" required />
+                        <div class="error" id="lastNameError"></div>
+          </form>
+          <form action="example.com/path" method="post">
+            <label for="firstName">EMAIL</label>
+            <input
+            type="email"
+              id="email"
+              placeholder="example@email.com"
+              name="email"
+              required
+              />
+              <div class="error" id="emailError"></div>
+            </form>
+            <form action="example.com/path" method="post">
+                <label for="firstName">PHONE NUMBER</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required />
+                <div class="error" id="phoneNumberError"></div>
+            </form>
+            <form action="example.com/path" method="post">
+                <label for="firstName">PASSWORD</label>
+                <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                />
+            <div class="error" id="passwordError"></div>
+        </form>
+        <form action="example.com/path" method="post">
+            <label for="firstName">CONFIRM PASSWORD</label>
+            <input
+            type="password"
+            id="passwordValidation"
+              name="passwordValidation"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            />
+            <div class="error" id="passwordValidationError"></div>
+        </form>
     </div>
-    
-</body>
+      </div>
+      <div class="create-account">
+          <button class="create-button">Create Account</button>
+        <div class="bottom-text">
+          Already have an account? <a class="log-in" href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
