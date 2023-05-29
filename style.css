@@ -1,163 +1,168 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-    --main-font : 1.2rem;
+:root {
+  --main-font: 1.2rem;
 }
 
 body {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
 .left-side-div {
-    position: relative;
-    background-image: url(/pictures/green-leaf.png);
-    width: 37vw;
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-shrink: 0;
+  position: relative;
+  background-image: url(/pictures/green-leaf.png);
+  width: 37vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .logo {
-    height: auto;
-    width: 15%;
+  height: auto;
+  width: 15%;
 }
 
-.card-body{
-    position:absolute;
-    width: 100%;
-    text-align: center;
-    background: black;
-    opacity: 0.6;
-    top: 8rem;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-
+.card-body {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: black;
+  opacity: 0.6;
+  top: 8rem;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
-
 
 .right-side-div {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2em;
-    background-color: #F9FAFB;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2em;
+  background-color: #f9fafb;
 }
 
-
-
 .image-source {
-    position:absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 3rem;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-    opacity: 0.6;
-
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 3rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  opacity: 0.6;
 }
 
 .source-link {
-    color: white;
-
-
+  color: white;
 }
 
 @font-face {
-    font-family: odin-font;
-    src: url(./font/Norse-Bold.otf);
-  }
+  font-family: odin-font;
+  src: url(./font/Norse-Bold.otf);
+}
 
 .odin {
-    font-size: 4em;
-    color: white;
-    font-family: "odin-font", sans-serif;
+  font-size: 4em;
+  color: white;
+  font-family: "odin-font", sans-serif;
 }
 
 .text {
-    margin-right: 7rem;;
-    font-size: var(--main-font);
-    font-weight: bold;
+  margin-right: 7rem;
+  font-size: var(--main-font);
+  font-weight: bold;
 }
 
-button{
-    background-color: #596D48;
-    color: white;
-    font-size: var(--main-font);
-    font-weight: bold;
-    padding: 10px 40px;
-    border-radius: 8px;
-    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.6);
+button {
+  background-color: #596d48;
+  color: white;
+  font-size: var(--main-font);
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
 .form-up-div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    margin-right: 7rem;
-    gap: 20px;
-    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.6);
-    padding: 20px;
-    padding-top: 30px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin-right: 7rem;
+  gap: 20px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  padding-top: 30px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    font-size: calc(var(--main-font) * 0.7);
-    font-weight: bold;
-    flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(var(--main-font) * 0.7);
+  font-weight: bold;
+  flex-basis: 0;
 }
 
 .input-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .bottom-text {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .log-in {
-    font-weight: 600;
-    color: #596D48;
+  font-weight: 600;
+  color: #596d48;
 }
 
 input {
-    border: 2px solid #000;
-    margin-bottom: 15px;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  input:invalid {
-    border-color: red;
-  }
-  
-  input:valid {
-    border-color: green;
-  }
+  border: 2px solid #000;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
 
-  .error {
-    color: red;
-    font-size: 12px;
-    padding: 0;
-  }
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  padding: 0;
+}
+
+.create-account {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.create-button:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
